@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>리드인 독서논술 신중점 | 밑 빠진 독에 물 붓기</title>
+  <meta name="description" content="물은 새도 콩나물은 자랍니다. 매주 한 권 읽고, 떠들고, 쓰고, 고치는 독서논술학원 리드인 신중점.">
+  <meta name="theme-color" content="#2347E2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Gowun+Batang:wght@400;700&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#philosophy">본문으로 건너뛰기</a>
+
+  <header class="nav">
+    <a class="nav-logo" href="#top">리드인 <span>신중점</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">메뉴</button>
+    <nav id="nav-links" class="nav-links" aria-label="주요 메뉴">
+      <a href="#philosophy">왜 밑 빠진 독인가</a>
+      <a href="#lesson">수업</a>
+      <a href="#classes">반 안내</a>
+      <a href="#books">이달의 책</a>
+      <a href="#faq">묻고 답하기</a>
+      <a class="nav-cta" href="#apply">상담 신청하기</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="top">
+    <h1 class="hero-title">
+      <span class="line">밑 빠진 독에</span>
+      <span class="line pour">물 붓기</span>
+    </h1>
+
+    <div class="jar" aria-hidden="true">
+      <canvas class="jar-canvas"></canvas>
+      <svg class="jar-svg" viewBox="0 0 400 640" xmlns="http://www.w3.org/2000/svg">
+        <path d="M128 78 C60 120 28 200 40 270 C52 350 100 400 118 430 L170 430 L179 404 L191 419 L202 394 L214 416 L225 401 L232 430 L282 430 C300 400 348 350 360 270 C372 200 340 120 272 78 Z"
+              fill="#6B4330" stroke="#9C6B48" stroke-width="3" stroke-linejoin="round"/>
+        <path d="M78 170 C58 220 60 290 84 340" fill="none" stroke="#B98A63" stroke-width="10" stroke-linecap="round" opacity=".35"/>
+        <path d="M62 236 q20 -24 40 0 t40 0 t40 0 t40 0 t40 0 t40 0 t36 0" fill="none" stroke="#9C6B48" stroke-width="5" stroke-linecap="round"/>
+        <path d="M74 262 q18 -18 36 0 t36 0 t36 0 t36 0 t36 0 t36 0 t36 0" fill="none" stroke="#9C6B48" stroke-width="3" stroke-linecap="round" opacity=".7"/>
+        <path d="M202 394 l-7 -24 l9 -15 M179 404 l-15 -11 M225 401 l12 -16" fill="none" stroke="#3A2217" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        <rect x="116" y="54" width="168" height="28" rx="14" fill="#4A2D1F" stroke="#9C6B48" stroke-width="3"/>
+      </svg>
+      <div class="sprout hero-sprout"><i class="bean"></i><i class="stem"></i></div>
+    </div>
+
+    <div class="hero-body">
+      <div class="slip">
+        <p class="slip-word">밑 빠진 독에 물 붓기 <span>[속담]</span></p>
+        <p class="slip-def"><s>아무리 애써도 보람이 없는 일.</s></p>
+        <p class="slip-pen">콩나물시루도 밑이 빠져 있습니다.<br>물은 다 새는데 콩나물은 자라요!</p>
+      </div>
+
+      <div class="hero-actions">
+        <button class="btn btn-bean" type="button" id="pour">물 한 바가지 붓기</button>
+        <a class="btn btn-line" href="#apply">상담 신청하기</a>
+      </div>
+
+      <dl class="tally" aria-live="polite">
+        <div><dt>부은 물</dt><dd><b id="t-pours">0</b>바가지</dd></div>
+        <div><dt>독에 남은 물</dt><dd><b>0</b>바가지</dd></div>
+        <div><dt>자란 콩나물</dt><dd><b id="t-cm">0.0</b>cm</dd></div>
+      </dl>
+    </div>
+
+    <svg class="wave wave-hero" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 80 L0 66 C120 72 200 30 360 38 C540 46 600 8 800 14 C1000 20 1100 60 1250 50 C1340 44 1400 58 1440 50 L1440 80 Z"/>
+    </svg>
+  </section>
+
+  <main class="flow">
+    <div class="stream" aria-hidden="true"></div>
+
+    <section id="philosophy" class="philosophy">
+      <div class="prose">
+        <h2>왜 하필 밑 빠진 독입니까</h2>
+        <p>콩나물시루에는 밑이 없습니다. 물을 부으면 그대로 다 빠져나갑니다. 그런데 며칠 뒤에 보면 콩나물이 한 뼘씩 자라 있습니다.</p>
+        <p>책 읽기도 그렇습니다. 아이는 지난달에 읽은 책의 줄거리를 벌써 잊었습니다. 주인공 이름도 가물가물합니다. 괜찮습니다. 물은 원래 새는 겁니다. 새는 동안 아이의 어휘가, 문장이, 생각하는 힘이 자랍니다.</p>
+        <p>그래서 리드인은 독을 때우지 않습니다. 매주 꾸준히 붓습니다.</p>
+      </div>
+
+      <div class="ledger">
+        <div class="ledger-col leaks">
+          <h3>새는 것</h3>
+          <ul>
+            <li>지난달 책의 줄거리</li>
+            <li>주인공 이름</li>
+            <li>지난주 단어 시험 점수</li>
+            <li>밑줄 친 문장</li>
+          </ul>
+        </div>
+        <div class="ledger-col stays">
+          <h3>남는 것</h3>
+          <ul>
+            <li>끝까지 읽어 내는 엉덩이 힘</li>
+            <li>제 생각을 문장으로 옮기는 습관</li>
+            <li>남의 글을 의심해 보는 눈</li>
+            <li>모르는 말을 그냥 넘기지 않는 버릇</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="lesson" class="lesson">
+      <h2>수업 90분은 이렇게 흘러갑니다</h2>
+      <div class="lesson-grid">
+        <ol class="steps">
+          <li>
+            <h3>읽어 옵니다 <small>집에서, 일주일에 한 권</small></h3>
+            <p>숙제는 이것 하나입니다. 다 못 읽었으면 못 읽은 데까지만 이야기합니다.</p>
+          </li>
+          <li>
+            <h3>떠듭니다 <small>30분</small></h3>
+            <p>정답 없는 질문 하나를 놓고 편을 갈라 말합니다. 조용한 교실은 리드인에서 고장 난 교실입니다.</p>
+          </li>
+          <li>
+            <h3>씁니다 <small>40분</small></h3>
+            <p>방금 떠든 말을 글로 옮깁니다. 무엇을 어떤 순서로 쓸지 먼저 정하고, 원고지에 손으로 씁니다.</p>
+          </li>
+          <li>
+            <h3>고칩니다 <small>20분</small></h3>
+            <p>선생님은 빨간 펜으로 묻기만 합니다. 고쳐 쓰는 건 아이 몫입니다.</p>
+          </li>
+        </ol>
+
+        <figure class="wongoji-wrap">
+          <div class="wongoji" data-text=" 나는 잎싹이 바보라고 생각했다. 그런데 다 읽고 나니 내가 바보였다." data-circle="19,3" data-cols="12" data-rows="4"></div>
+          <p class="pen-note">여기가 제일 궁금해.<br>왜 생각이 바뀌었는지 한 문장만 더!</p>
+          <figcaption>줄기반 4학년 글, 「마당을 나온 암탉」을 읽고</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="classes" class="classes">
+      <h2>학년에 맞춰 네 반으로 나눕니다</h2>
+      <div class="class-list">
+        <article class="class-row" style="--h:14px">
+          <h3>새싹반</h3>
+          <p class="who">초등 1~2학년</p>
+          <p>그림책과 짧은 동화를 소리 내어 읽고, 세 문장을 씁니다.</p>
+          <p class="time">주 1회 60분</p>
+        </article>
+        <article class="class-row" style="--h:24px">
+          <h3>줄기반</h3>
+          <p class="who">초등 3~4학년</p>
+          <p>장편 동화를 읽고 찬반 토론을 한 뒤, 한 문단을 씁니다.</p>
+          <p class="time">주 1회 90분</p>
+        </article>
+        <article class="class-row" style="--h:34px">
+          <h3>가지반</h3>
+          <p class="who">초등 5~6학년</p>
+          <p>청소년 소설과 비문학을 읽고, 개요를 짜서 600자를 씁니다.</p>
+          <p class="time">주 1회 90분</p>
+        </article>
+        <article class="class-row" style="--h:46px">
+          <h3>나무반</h3>
+          <p class="who">중학교 1~3학년</p>
+          <p>고전과 사회과학을 읽고 1,000자 논술을 씁니다. 서술형 평가도 함께 준비합니다.</p>
+          <p class="time">주 1회 120분</p>
+        </article>
+      </div>
+      <p class="fine">시간표와 수강료는 상담 때 안내합니다.</p>
+    </section>
+
+    <section id="books" class="books">
+      <h2>이달에 붓는 물</h2>
+      <p class="lead">책등을 누르면 그 반이 이번 달에 떠들 질문이 나옵니다.</p>
+      <div class="shelf-wrap">
+        <div class="shelf" role="group" aria-label="이달의 책">
+          <button type="button" class="spine" style="--c:#FFD447;--t:#131A33;--sh:74%" aria-pressed="true"
+                  data-class="새싹반" data-title="알사탕" data-author="백희나"
+                  data-q="동동이는 왜 늘 혼자 놀았을까요? 알사탕이 없었다면 끝까지 혼자였을까요?">알사탕</button>
+          <button type="button" class="spine" style="--c:#35B37E;--t:#fff;--sh:92%" aria-pressed="false"
+                  data-class="줄기반" data-title="마당을 나온 암탉" data-author="황선미"
+                  data-q="잎싹은 행복했을까요, 불쌍했을까요? 한쪽을 골라 친구를 설득해 봅시다.">마당을 나온 암탉</button>
+          <button type="button" class="spine" style="--c:#2347E2;--t:#fff;--sh:82%" aria-pressed="false"
+                  data-class="가지반" data-title="긴긴밤" data-author="루리"
+                  data-q="노든은 왜 바다까지 같이 가지 않았을까요? 그건 버린 걸까요, 보내 준 걸까요?">긴긴밤</button>
+          <button type="button" class="spine" style="--c:#6B4330;--t:#fff;--sh:100%" aria-pressed="false"
+                  data-class="나무반" data-title="아몬드" data-author="손원평"
+                  data-q="감정을 못 느끼는 것과 표현하지 않는 것은 어떻게 다를까요? 우리 반에는 어느 쪽이 더 많을까요?">아몬드</button>
+        </div>
+        <div class="book-panel" aria-live="polite">
+          <p class="book-class" id="b-class">새싹반</p>
+          <p class="book-title"><span id="b-title">알사탕</span> <small id="b-author">백희나</small></p>
+          <p class="book-q" id="b-q">동동이는 왜 늘 혼자 놀았을까요? 알사탕이 없었다면 끝까지 혼자였을까요?</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="faq">
+      <h2>묻고 답하기</h2>
+      <div class="faq-list">
+        <details open>
+          <summary>정말 다 새나요?</summary>
+          <p>네, 대부분 샙니다. 어른도 작년에 읽은 책 내용은 거의 기억하지 못합니다. 남는 건 내용이 아니라 읽는 힘입니다.</p>
+        </details>
+        <details>
+          <summary>책을 싫어하는 아이도 다닐 수 있나요?</summary>
+          <p>그런 아이가 절반입니다. 첫 달에는 얇고 웃긴 책만 읽습니다.</p>
+        </details>
+        <details>
+          <summary>숙제가 많은가요?</summary>
+          <p>일주일에 책 한 권 읽어 오기가 전부입니다. 글은 교실에서 씁니다.</p>
+        </details>
+        <details>
+          <summary>학교 성적에 도움이 되나요?</summary>
+          <p>서술형 평가와 수행평가는 결국 읽고 쓰는 시험입니다. 다만 다음 달 점수를 약속하지는 않습니다. 콩나물도 하루 만에 자라지는 않습니다.</p>
+        </details>
+        <details>
+          <summary>먼저 수업을 들어 볼 수 있나요?</summary>
+          <p>네. 한 번 같이 읽고 써 본 뒤에 결정하세요. 아래에서 상담을 신청하면 체험 수업 날짜를 함께 잡습니다.</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <section class="closing" id="apply">
+    <svg class="wave wave-closing" viewBox="0 0 1440 80" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0 0 L1440 0 L1440 34 C1320 60 1200 20 1040 30 C860 42 780 72 600 62 C420 52 300 18 160 22 C90 24 40 14 0 10 Z"/>
+    </svg>
+
+    <div class="closing-inner">
+      <div class="closing-copy">
+        <h2>물은 샜습니다.<br>아이는 자랐습니다.</h2>
+        <p>한 번 와서 같이 읽고 써 보세요. 상담과 체험 수업은 무료입니다.</p>
+        <address>
+          리드인 독서논술 신중점<br>
+          주소를 여기에 적어 주세요<br>
+          <a href="tel:000-0000-0000">000-0000-0000</a>, 평일 오후 1시부터 9시까지
+        </address>
+      </div>
+
+      <form class="apply-form" id="apply-form" novalidate>
+        <label>아이 학년
+          <select name="grade" required>
+            <option value="">골라 주세요</option>
+            <option>초등 1~2학년 (새싹반)</option>
+            <option>초등 3~4학년 (줄기반)</option>
+            <option>초등 5~6학년 (가지반)</option>
+            <option>중학생 (나무반)</option>
+          </select>
+        </label>
+        <label>연락받을 전화번호
+          <input type="tel" name="phone" inputmode="tel" autocomplete="tel" placeholder="010-1234-5678" required>
+        </label>
+        <label>남기실 말 <small>(선택)</small>
+          <textarea name="note" rows="3" placeholder="아이가 책을 얼마나 좋아하는지, 싫어하는지 알려 주세요."></textarea>
+        </label>
+        <button class="btn btn-bean" type="submit">상담 신청하기</button>
+        <p class="form-status" role="status"></p>
+      </form>
+    </div>
+
+    <div class="siru" aria-hidden="true"></div>
+
+    <footer class="foot">
+      <p>리드인 독서논술 신중점</p>
+      <p>이 페이지는 샘플 시안입니다.</p>
+    </footer>
+  </section>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
